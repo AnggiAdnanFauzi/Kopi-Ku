@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import cupImg from '../assets/images/cup_3d_nobg.png';
 
 const Hero = () => {
   return (
@@ -37,7 +38,7 @@ const Hero = () => {
           <div className="relative z-10 w-[450px] h-[550px] flex items-center justify-center mix-blend-multiply">
             {/* The 3D Generated Cup (Pure White Background Removed via Multiply) */}
             <img 
-              src={`${import.meta.env.BASE_URL}images/cup_3d_nobg.png`} 
+              src={cupImg} 
               alt="Kemasan Kopi Ku 3D" 
               className="absolute inset-0 w-full h-full object-cover object-center"
             />

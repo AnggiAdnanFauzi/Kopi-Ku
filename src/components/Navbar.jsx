@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Coffee } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,7 +37,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-3 font-display text-2xl font-bold cursor-pointer text-brand-green hover:opacity-80 transition-opacity">
           <div className="w-10 h-10 overflow-hidden mix-blend-multiply relative">
             <img 
-              src={`${import.meta.env.BASE_URL}logo.png`} 
+              src={logoImg} 
               alt="Logo Kopi Ku" 
               className="absolute w-[80px] h-[80px] max-w-none top-[-10px] left-[-20px] contrast-125 brightness-110" 
             />
