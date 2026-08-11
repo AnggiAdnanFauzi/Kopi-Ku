@@ -42,7 +42,7 @@ const About = () => {
                 {/* Cropped KK Graphic Only */}
                 <div className="w-32 h-[88px] overflow-hidden relative flex flex-col items-center justify-start mb-2">
                   <img 
-                    src="/logo.png" 
+                    src={`${import.meta.env.BASE_URL}logo.png`} 
                     alt="KK Graphic" 
                     className="absolute w-[224px] h-[224px] max-w-none top-[-12px] left-[-46px] contrast-[1.2]" 
                   />
