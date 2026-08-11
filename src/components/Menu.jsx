@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
+import kopiKuCloudImg from '../assets/images/signature/kopi_ku_cloud.png';
+import pandanLatteImg from '../assets/images/signature/pandan_latte.png';
+import butterscotchImg from '../assets/images/signature/butterscotch.png';
+import croissantImg from '../assets/images/pastry/croissant.png';
+import chocolatineImg from '../assets/images/pastry/chocolatine.png';
+import cheesecakeImg from '../assets/images/pastry/cheesecake.png';
 
 const menuData = {
   "Signature": [
-    { name: "Kopi Ku Cloud", desc: "Espresso yang diakhiri dengan buih awan manis khas kami.", price: "Rp 35.000", img: "/images/signature/kopi_ku_cloud.png" },
-    { name: "Pandan Latte", desc: "Ekstrak pandan lokal dipadukan dengan espresso dan susu oat.", price: "Rp 32.000", img: "/images/signature/pandan_latte.png" },
-    { name: "Butterscotch Sea Salt", desc: "Latte butterscotch yang kaya dengan sentuhan garam laut.", price: "Rp 38.000", img: "/images/signature/butterscotch.png" }
+    { name: "Kopi Ku Cloud", desc: "Espresso yang diakhiri dengan buih awan manis khas kami.", price: "Rp 35.000", img: kopiKuCloudImg },
+    { name: "Pandan Latte", desc: "Ekstrak pandan lokal dipadukan dengan espresso dan susu oat.", price: "Rp 32.000", img: pandanLatteImg },
+    { name: "Butterscotch Sea Salt", desc: "Latte butterscotch yang kaya dengan sentuhan garam laut.", price: "Rp 38.000", img: butterscotchImg }
   ],
   "Espresso Based": [
     { name: "Americano", desc: "Kopi hitam klasik dengan racikan khas kami.", price: "Rp 25.000", img: "https://images.unsplash.com/photo-1551030173-122aabc4489c?auto=format&fit=crop&q=80&w=800" },
@@ -17,9 +23,9 @@ const menuData = {
     { name: "Tropical Fizz", desc: "Minuman mocktail segar dengan buah markisa dan daun mint.", price: "Rp 28.000", img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=800" }
   ],
   "Pastry": [
-    { name: "Butter Croissant", desc: "Kroisan mentega renyah dan berlapis, dipanggang segar setiap pagi.", price: "Rp 22.000", img: "/images/pastry/croissant.png" },
-    { name: "Almond Chocolatine", desc: "Kue cokelat klasik yang ditaburi kacang almond panggang.", price: "Rp 28.000", img: "/images/pastry/chocolatine.png" },
-    { name: "New York Cheesecake", desc: "Kue keju lembut dengan kulit biskuit graham.", price: "Rp 35.000", img: "/images/pastry/cheesecake.png" }
+    { name: "Butter Croissant", desc: "Kroisan mentega renyah dan berlapis, dipanggang segar setiap pagi.", price: "Rp 22.000", img: croissantImg },
+    { name: "Almond Chocolatine", desc: "Kue cokelat klasik yang ditaburi kacang almond panggang.", price: "Rp 28.000", img: chocolatineImg },
+    { name: "New York Cheesecake", desc: "Kue keju lembut dengan kulit biskuit graham.", price: "Rp 35.000", img: cheesecakeImg }
   ]
 };
 
